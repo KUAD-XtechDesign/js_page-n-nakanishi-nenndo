@@ -1,3 +1,35 @@
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background: tomato;
+}
+.container{
+    display: flex;
+}
+.main{
+    background: pink;
+    width: 70%;
+}
+.side{
+    background: orange;
+    width: 30%;
+}
+footer{
+    backgroud: plum;
+}
+
+@media(max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    .main
+    .side{
+        width: 100%;
+    }
+}
+
 .loader {
     margin: 100px auto;
     font-size: 25px;
