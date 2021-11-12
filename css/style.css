@@ -1,47 +1,53 @@
-body {
-  min-width: 320
-px
-;
-  color: #2b2b2e;
-  font-family: "FOT-筑紫Aオールド明朝 Pr6 M","FOT-筑紫Aオールド明朝 Pr6 B","Heldane Text",serif;
-  font-weight: 400;
+@charset "utf-8";
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background:#333;
+  text-align:center;
+  color:#fff;
 }
-body {
-  margin: 0;
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 }
-*, ::before, ::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
 }
-user agent stylesheet
-body {
-  display: block;
-  margin: 8px;
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+#container{
+    width:100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-html {
-  cursor: default;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-tap-highlight-color: #b77e7e00;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  word-break: break-word;
+
+
+a{
+    color: #333;
 }
-::before, ::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-}
-*, ::before, ::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-::before, ::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-}
-*, ::before, ::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+
+a:hover{
+     text-decoration: none;   
 }
