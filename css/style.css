@@ -19,10 +19,10 @@
     margin-bottom: 2rem;
   }
   .area:nth-child(even) {
-    background-color: #0db;
+    background-color: rgb(255, 255, 255);
   }
   .area:nth-child(odd) {
-    background-color: #0bd;
+    background-color: rgb(255, 255, 255);
   }
 
 .wrapper{
