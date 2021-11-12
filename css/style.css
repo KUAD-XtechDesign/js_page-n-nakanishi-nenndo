@@ -30,17 +30,17 @@
     margin: 0 auto;
 }
 header{
-    background: tomato;
+    background: rgb(196, 226, 235)
 }
 .container{
     display: flex;
 }
 .main{
-    background: pink;
+    background: rgb(255, 192, 203);
     width: 70%;
 }
 .side{
-    background: orange;
+    background: rgb(253, 252, 249);
     width: 30%;
 }
 footer{
